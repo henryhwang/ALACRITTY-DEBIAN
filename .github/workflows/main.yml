@@ -1,9 +1,10 @@
 name: Build and release packages
 
 on:
- push:
-  tags:
-    - '*'
+  push:
+    tags:
+      - '*'
+  workflow_dispatch
 
 env:
   DEBIAN_STABLE: bullseye
