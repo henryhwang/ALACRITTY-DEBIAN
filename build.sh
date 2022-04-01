@@ -2,7 +2,8 @@
 
 set -eu
 
-IMAGE="debian:bullseye-slim"
+#IMAGE="debian:bullseye-slim"
+IMAGE="debian:bullseye"
 TARGET="$(dirname "$0" | xargs realpath)"
 VERSION="v0.10.1"
 
