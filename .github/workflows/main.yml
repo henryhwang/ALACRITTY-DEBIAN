@@ -32,9 +32,9 @@ jobs:
           rename.ul .deb _unstable.deb target/${{ env.PKG_NAME }}_*.deb
           mv -n target/${{ env.PKG_NAME }}_*.deb assets/
 
-      - name: Build packages
-        uses: "marvinpinto/action-automatic-releases@v1.2.1"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          files: assets/*.deb
+#      - name: Build packages
+#        uses: "marvinpinto/action-automatic-releases@v1.2.1"
+#        with:
+#          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+#          prerelease: false
+#          files: assets/*.deb
